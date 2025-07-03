@@ -16,8 +16,8 @@ IMS is a robust and secure Insurance Management System built with .NET Core Web 
 - Logging: Serilog
 - Frontend: (If applicable, like Angular/React, mention here)
  
-## Project Structure
- 
+# Project Directory Structure
+
 **src/**
 ├── index.html
 ├── main.ts
