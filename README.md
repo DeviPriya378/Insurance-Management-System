@@ -18,7 +18,7 @@ IMS is a robust and secure Insurance Management System built with .NET Core Web 
  
 ## Project Structure
  
-src/
+**src/**
 ├── index.html
 ├── main.ts
 ├── styles.css
