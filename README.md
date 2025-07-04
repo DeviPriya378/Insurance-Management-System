@@ -11,57 +11,55 @@ IMS is a robust and secure Insurance Management System built with .NET Core Web 
 - Architecture: Clean Architecture (Controller, Services, Repositories, DTOs)
 - Authentication: JWT Token with Role-based Authorization
 - Object Mapping: AutoMapper
-- Testing: xUnit (if applicable)
 - Documentation: Swagger UI
-- Logging: Serilog
-- Frontend: (If applicable, like Angular/React, mention here)
+- Frontend: Angular
  
 # Project Directory Structure
 
-**src/**
+<pre>src/
 ├── index.html
 ├── main.ts
 ├── styles.css
-├── test.ts
+├── tests.ts
 ├── app/
 │   ├── app.component.html
 │   ├── app.component.css
 │   ├── app.component.spec.ts
 │   ├── app.component.ts
 │   ├── app.config.ts
-│   ├── app.routes.ts
-│   ├── core/
-│   │   ├── auth/
-│   │   │   ├── auth.services.ts
-│   │   │   ├── auth.guards.ts
-│   │   ├── intercepter/
-│   │   ├── services/
-│   ├── features/
-│   │   ├── admin/
-│   │   │   ├── admin-dashboard/
-│   │   │   ├── admin-profile/
-│   │   │   ├── agent-management/
-│   │   │   ├── customer-management/
-│   │   │   ├── policy-management/
-│   │   ├── agent/
-│   │   ├── auth/
-│   │   │   ├── login/
-│   │   │   ├── register/
-│   │   ├── customer/
-│   │   ├── Home/
-│   │   ├── products/
-│   ├── layouts/
-│   │   ├── admin-layout/
-│   │   ├── agent-layout/
-│   │   ├── customer-layout/
-│   ├── shared/
-│   │   ├── components/
-│   │   ├── confirm-dialog/
-│   │   ├── reject-dialog/
-│   │   ├── api-response.interface.ts
-│   │   ├── pagedResult.dto.ts
-├── environment/
-│   ├── environment.development.ts
+│   └── app.routes.ts
+├── core/
+    └── auth/
+│      ├── auth.service.ts
+│      ├── auth.guards.ts 
+│   └── intercepter/
+│      └──services/
+│   └── features/
+│           ├── admin/
+│           │   ├── admin-dashboard/
+│           │   └── admin-profile/
+│           ├── agent-management/
+│           ├── customer-management/
+│           ├── policy-management/
+│           ├── agent/
+│           ├── auth/
+│           ├── login/
+│           ├── registry/
+│           ├── customer/
+│           ├── home/
+│           ├── products/
+│       └── layouts/
+│           ├── admin-layout/
+│           ├── agent-layout/
+│           └── customer-layout/
+|        └── shared/
+|            ├── components/
+|            ├── confirm-dialog/
+|           ├── reject-dialog/
+|          ├── api-response.interface.ts
+|         ├── pagedResult.dtos.ts
+└── environment/
+    └── environment.development.ts </pre>
 
  
 ## User Roles & Permissions
@@ -80,16 +78,15 @@ IMS is a robust and secure Insurance Management System built with .NET Core Web 
 - ✅ User Registration & Login (JWT Auth)
 - ✅ CRUD for Customers, Agents, Policies, Claims
 - ✅ Role-based access
-- ✅ Logging with Serilog
 - ✅ Exception handling middleware
 - ✅ Swagger integrated
 - ✅ Clean Architecture using Interfaces, Repositories, Services
 - ✅ AutoMapper configured
-- ✅ SQL Server DB-first approach with Scaffolded Models
+- ✅ Code First Approach with Migration.
  
 ## API Testing
  
-- Use Swagger or Postman to test endpoints
+- Used Swagger to test endpoints
 - Include Authorization Header with Bearer Token
  
 ## Setup Instructions
